@@ -1,0 +1,27 @@
+version: "3.9"
+x-agent-base: &agent-base
+  build: .
+  env_file: .env
+  volumes:
+    - ./agent/CLAUDE.md:/home/agent/CLAUDE.md:ro
+    - ./agent/.claude:/home/agent/.claude:ro
+  restart: "no"
+  networks:
+    - agent-net
+
+services:
+  agent-1:
+    <<: *agent-base
+    container_name: agent-1
+    environment:
+      JIRA_TICKET: "${TICKET_1}"
+
+  agent-2:
+    <<: *agent-base
+    container_name: agent-2
+    environment:
+      JIRA_TICKET: "${TICKET_2}"
+
+networks:
+  agent-net:
+    driver: bridge
