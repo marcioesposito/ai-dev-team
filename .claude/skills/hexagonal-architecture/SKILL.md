@@ -1,7 +1,7 @@
 ---
 name: hexagonal-architecture
-description: Apply Hexagonal Architecture (Ports & Adapters) to a codebase. Use this skill when the user asks to "implement hexagonal architecture", "apply ports and adapters", "restructure with hexagonal", "add a port", "add an adapter", "isolate business logic from infrastructure", or discusses separating domain from technical concerns. Also activate when reviewing code for architecture violations or when migrating from layered architecture.
-version: 1.0.0
+description: Apply Hexagonal Architecture (Ports & Adapters) to a codebase. Use this skill when the user asks to "implement hexagonal architecture", "apply ports and adapters", "restructure with hexagonal", "add a port", "add an adapter", "isolate business logic from infrastructure", or discusses separating domain from technical concerns. Also activate when reviewing code for architecture violations or when migrating from layered architecture. Works for Java and other languages; includes Java-specific patterns with Maven modules, records, Spring Boot, and Jakarta REST.
+version: 1.1.0
 ---
 
 # Hexagonal Architecture (Ports & Adapters)
@@ -11,6 +11,7 @@ Apply Hexagonal Architecture to isolate business logic from technical infrastruc
 Reference materials:
 - [Core concepts](references/concepts.md)
 - [Structure guide](references/structure.md)
+- [Java implementation](references/java-implementation.md)
 - [Mapping strategies](references/mapping-strategies.md)
 - [Testing guide](references/testing.md)
 
